@@ -1,0 +1,21 @@
+<odoo>
+    <record id='view_tree_todo' model='ir.ui.view'>
+        <field name='name'>view.tree.todo</field>
+        <field name='model'>mas_cal</field>
+        <field name='arch' type='xml'>
+            <tree>
+                <field name='name'/>
+                <field name='status'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id='action_view_todo' model='ir.actions.act_window'>
+        <field name='name'>Últimos ejercicios resueltos</field>
+        <field name='res_model'>mas_cal</field>
+        <field name='view_mode'>tree,form</field>
+    </record>
+
+    <menuitem id='menu_todo' parent='' action='calculador_cientifica_view_todo'/>
+
+</odoo>

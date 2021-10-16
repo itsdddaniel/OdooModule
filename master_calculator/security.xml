@@ -1,0 +1,11 @@
+<odoo>
+    <record id='model_access_calc' model='ir.model.access'>
+        <field name='name'>model.access.todo</field>
+        <field name='model_id' ref='master_calculator.model_mas_cal'/>
+        <field name='group_id' ref='base.group_system'></field>
+        <field name='perm_read' eval='1'></field>
+        <field name='perm_write' eval='1'></field>
+        <field name='perm_create' eval='1'></field>
+        <field name='perm_unlink' eval='1'></field>
+    </record>   
+</odoo>
